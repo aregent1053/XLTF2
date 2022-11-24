@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1024 height=1024></canvas>
+      <canvas id="unity-canvas" width=1080 height=1920></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/XLTF2.loader.js";
+      var loaderUrl = buildUrl + "/XLTmobile.loader.js";
       var config = {
-        dataUrl: buildUrl + "/XLTF2.data",
-        frameworkUrl: buildUrl + "/XLTF2.framework.js",
-        codeUrl: buildUrl + "/XLTF2.wasm",
+        dataUrl: buildUrl + "/XLTmobile.data",
+        frameworkUrl: buildUrl + "/XLTmobile.framework.js",
+        codeUrl: buildUrl + "/XLTmobile.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "XLT",
@@ -93,8 +93,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "1024px";
-        canvas.style.height = "1024px";
+        canvas.style.width = "1080px";
+        canvas.style.height = "1920px";
       }
 
       loadingBar.style.display = "block";
